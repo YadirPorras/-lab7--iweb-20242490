@@ -35,7 +35,7 @@ public class EquipoDao extends BaseDao { // TODO 2a: debe heredar de BaseDao
                 equipo.setCantidad(rs.getString("equipo_precio"))
                 // Columnas con NULL: getObject(col, X.class) devuelve null real.
                 // getInt devolveria 0 y se perderia la diferencia.
-                lista.add();
+                lista.add(equipo);
                 return lista;
             }
         }
